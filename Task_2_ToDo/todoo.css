@@ -1,0 +1,218 @@
+
+.todo-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 3%;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    color: white;
+    transition: 0.3s linear;
+    overflow: hidden;
+    border: 2px solid rgb(0, 81, 255); 
+  }
+  
+  .header,
+  .form,
+  .datetime {
+    margin: 0 1rem;
+    min-height: 10vh;
+    width: 100%;
+    
+  }
+  
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 3rem;
+    min-height: 25vh;
+    width: 100%;
+   
+  }
+  
+  section h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    height: 19px
+  }
+  
+  .date-time {
+    font-size: 2.4rem;
+    font-size: 25px;
+    text-align: center;
+    height: 1px
+  }
+  
+  form {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 0.8rem;
+    width: 101%;
+  }
+  
+  form input {
+    padding: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    outline: none;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    max-width: 500px;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+    background-color: #4e7aa5;
+    color: var(--primary-color);
+    border-radius:5px
+  }
+  
+  form input:hover {
+    cursor: text;
+  }
+  
+  form input::placeholder {
+    color: white;
+    opacity: 0.7;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    /* transition: box-shadow 200ms ease, background-color 200ms ease-in-out; */
+    /* background-color: #323a45; */
+    color: rgb(0, 0, 0);
+  }
+  
+  form button:hover {
+    cursor: pointer;
+    background-color: black;
+  
+  }
+  
+  form button {
+    padding: 16.4px;
+    font-size: 18px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-width: 100px;
+    background-color: #323a45;
+    color: var(--secondary-color);
+    border-radius:5px
+  }
+  
+  span {
+    margin-right: 3.2rem;
+  }
+  
+  .myUnorderList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  .todo-list {
+    min-width: 25%;
+  
+    /* To remove the bullets of unordered list */
+    list-style: none;
+  }
+  
+  .todo-item {
+    padding: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    outline: none;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    max-width: 500px;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+    background-color: #4e7aa5;
+    color: var(--primary-color);
+    list-style: none;
+    border-radius:5px;
+    width: 450px;
+    margin:9px ;
+  }
+  
+  li span {
+    max-width: 20rem;
+    color: #1c2833;
+  }
+  
+  .check-btn,
+  .delete-btn,
+  .edit-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 80%;
+    margin: 0 5px;
+    /* background-color: #fff; */
+    /* color: rgb(0, 0, 0); */
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  }
+  
+  .check-btn {
+    color: white;
+    background-color: #4e7aa5;
+    position: absolute;
+    right: 609px;
+    margin-top: -6px;
+
+  }
+  .check-btn:hover {
+    color: rgb(89, 219, 89);
+  }
+  .delete-btn {
+    color: white;
+    background-color: #4e7aa5;
+    position: absolute;
+    right: 553px;
+    margin-top: -6px;
+  }
+  .delete-btn:hover{
+    color: rgb(246, 246, 89);
+  }
+  .edit-btn{
+    color: white;
+    background-color: #4e7aa5;
+    position: absolute;
+    right: 505px;
+    margin-top: -6px;
+  }
+  .edit-btn:hover{
+    color: #0cdcf3;
+  }
+  
+  .checkList {
+    text-decoration: line-through;
+  }
+  
+  .notCheckList {
+    text-decoration: none;
+  }
+  
+  .clear-btn {
+    background-color: #f06a5b;
+    font-size: 1.6rem;
+    padding: 1rem 2.2rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+  }
+  
+  .clear-btn:hover {
+    color: #fff;
+    background-color: #e55141;
+  }
